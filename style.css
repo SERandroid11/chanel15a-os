@@ -1,0 +1,252 @@
+/* Configuración Global y Fuentes */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    background-color: #cceef0; /* Color de fondo azul claro */
+    color: #4a4a4a;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Pinyon Script', cursive;
+    font-weight: normal;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* 1. Portada Principal */
+.hero {
+    height: 100vh;
+    background-image: url('chanel-main.jpg'); /* <-- USA TU IMAGEN PRINCIPAL AQUÍ */
+    background-size: cover;
+    background-position: center 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #d8dde2; /* Color de texto azul-gris claro */
+    box-shadow: inset 0 0 0 2000px rgba(60, 0, 40, 0.3); /* Tinte oscuro sobre la imagen */
+}
+
+.hero p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.8rem;
+    margin: 5px 0;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    color: #d8dde2;
+    margin: -10px 0;
+}
+
+.hero .time {
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+
+/* Estructura de las "Tarjetas" de contenido */
+main {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #cceef0; /* Mismo fondo azul claro */
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    /* Las tarjetas en sí no necesitan bordes, se mezclan con el fondo */
+}
+
+/* 2. Código de Vestimenta */
+.dress-code h2 {
+    font-size: 2.8rem;
+}
+
+.dress-code .main-dresscode {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.dress-code p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+
+/* 3. Contador */
+.countdown h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.timer-box {
+    background-color: #fbeae6; /* Color rosa-durazno pálido */
+    padding: 15px 10px;
+    border-radius: 5px;
+    min-width: 70px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timer-box span {
+    display: block;
+    font-size: 2.5rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    color: #555;
+}
+
+.timer-box p {
+    font-size: 0.9rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* 4. Ubicación */
+.location .icon {
+    font-size: 2rem;
+}
+
+.location h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.location p {
+    font-size: 1.3rem;
+    margin: 5px 0;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 5. Mesa de Regalos */
+.gifts h2 {
+    font-size: 2.8rem;
+}
+
+.gifts .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.gift-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gift-list li {
+    font-family: 'EB Garamond', serif; /* Fuente elegante para la lista */
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* 6. Confirmar Asistencia */
+.rsvp h2 {
+    font-family: 'EB Garamond'; /* Fuente elegante para la lista */
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.rsvp p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: white;
+    color: #4a4a4a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #ddd;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+/* Estilos para el Slider de Fotos */
+.slider-container {
+    position: relative;
+    width: 90%;
+    max-width: 400px; /* Ajusta el ancho máximo del slider */
+    margin: 30px auto 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid white; /* Borde blanco alrededor del contenedor */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex; /* Para centrar la imagen verticalmente si es necesario */
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px; /* Un pequeño radio en las imágenes dentro del slide */
+}
+
+.slider-container .prev,
+.slider-container .next {
+    cursor: pointer;
+    
+    top: 100%;
+    width: auto;
+    padding: 12px 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.slider-container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slider-container .prev:hover,
+.slider-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

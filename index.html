@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV Años de Chanel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <p>XV Años</p>
+            <h1>Chanel</h1>
+            <p>29 de noviembre de 2025</p>
+            <p class="time">19:30</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="card dress-code">
+            <h2>Código de vestimenta:</h2>
+            <p class="main-dresscode">Playero</p>
+            <p>No usar tonalidades celestes</p>
+            <p>llevar traje de baño</p>
+            
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="chanel1.jpg" alt="Chanel 1"></div>
+                    <div class="slide"><img src="chanel2.jpg" alt="Chanel 2"></div>
+                    <div class="slide"><img src="chanel3.jpg" alt="Chanel 3"></div>
+                    <div class="slide"><img src="chanel4.jpg" alt="Chanel 4"></div>
+                    <div class="slide"><img src="chanel5.jpg" alt="Chanel 5"></div>
+                    <div class="slide"><img src="chanel6.jpg" alt="Chanel 6"></div>
+                    <div class="slide"><img src="chanel7.jpg" alt="Chanel 7"></div>
+                    <div class="slide"><img src="chanel-main.jpg" alt="Chanel 8"></div>
+                </div>
+               <button class="prev" onclick="moveSlide(-1)">&lt;</button>
+                <button class="next" onclick="moveSlide(1)">&gt;</button>
+            </div>
+            </section>
+
+        <section class="card countdown">
+            <h3>Faltan:</h3>
+            <div class="timer-container">
+                <div class="timer-box">
+                    <span id="days">00</span>
+                    <p>Días</p>
+                </div>
+                <div class="timer-box">
+                    <span id="hours">00</span>
+                    <p>Horas</p>
+                </div>
+                <div class="timer-box">
+                    <span id="minutes">00</span>
+                    <p>Minutos</p>
+                </div>
+                <div class="timer-box">
+                    <span id="seconds">00</span>
+                    <p>Segundos</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card location">
+            <span class="icon">📍</span>
+            <h2>New Party</h2>
+            <p>Quinta New Party, Minga Guazú,</p>
+            <p>Paraguay</p>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3602.043513689104!2d-54.7411982!3d-25.4701254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDI4JzI5LjIiUyA1NMKwNDQnMTkuMCJX!5e0!3m2!1ses!2spy!4v1729470353395!5m2!1ses!2spy" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="card gifts">
+            <h2>Mesa de regalos 🎁</h2>
+            <p class="subtitle">Cualquier regalo es bienvenido</p>
+            <ul class="gift-list">
+                <li>Remeras deportivas tamaño p/m</li>
+                <li>Body splash (v.s o thabeauty)</li>
+                <li>Perfumes</li>
+                <li>Bolsos</li>
+                <li>Accesorios de paprika</li>
+                <li>Peluches</li>
+                <li>Chocolates de preferencia raffaello o alpino</li>
+                <li>Maquillaje</li>
+                <li>Funkos</li>
+                <li>Dinero (Habrá un buzón/caja para sobres)</li>
+            </ul>
+        </section>
+
+        <section class="card rsvp">
+            <h2>CONFIRMAR ASITENCIA</h2>
+            <p>HASTA EL 20 DE NOVIEMBRE</p>
+            <a href="https://wa.me/+595976544971" target="_blank" class="whatsapp-button">
+                Whatsapp
+            </a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
